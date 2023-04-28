@@ -22,6 +22,14 @@ npm i
 npm run storybook
 ```
 
+## Components
+
+### Price
+
+The price component displays the price of a product.
+
+![Price component](docs/components/price.png)
+
 ## Roadmap
 
 See the [open
