@@ -140,4 +140,26 @@ describe('Price', () => {
     expect(container).not.toBeEmptyDOMElement();
     expect(container.textContent).toBe('$2.00');
   });
+
+  it('displays the thousandths separator.', () => {
+    const { container, rerender } = render(
+      <Price unitCost={1234.56} />,
+    );
+
+    // NOTE: screen.findByText is unable to locate the text since the price
+    // component separates the price into different components. One would think
+    // that it wouldn't matter, but it does and the warning message reads:
+    // "Unable to find an element with the text: $0.01. This could be because
+    // the text is broken up by multiple elements. In this case, you can provide
+    // a function for your text matcher to make your matcher more flexible."
+    expect(container).not.toBeEmptyDOMElement();
+    expect(container.textContent).toBe('$1,234.56');
+
+    rerender(
+      <Price unitCost={1234567.89} />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+    expect(container.textContent).toBe('$1,234,567.89');
+  });
 });

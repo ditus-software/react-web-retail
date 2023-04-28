@@ -26,7 +26,7 @@ function Price(props) {
     return null;
   }
 
-  const whole = numeral(Math.floor(unitCost)).format('0');
+  const whole = numeral(Math.floor(unitCost)).format('0,0');
 
   // Math.trunc prevents the thousandths position from rounding and affecting
   // the hundredths position.
