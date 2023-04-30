@@ -32,9 +32,11 @@
                     "**/*.test.jsx",
                     "**/*.config.js",
                     "**/setupTests.js"
-                ]
+                ],
+                "peerDependencies": true
             }
         ],
+        "react/no-unused-prop-types": "off",
         "jsdoc/check-tag-names": [
           "error",
           {
