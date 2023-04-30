@@ -1,6 +1,6 @@
 {
   "name": "@ditus/react-web-retail",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A set of reusable React web components based on Material UI for retail applications.",
   "private": false,
   "main": "dist/index.js",
@@ -27,6 +27,7 @@
     "@ditus/react-translation": "^1.0.2",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.2",
     "@mui/system": "^5.12.1",
     "numeral": "2.0.6",
