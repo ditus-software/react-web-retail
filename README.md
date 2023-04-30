@@ -30,6 +30,13 @@ The price component displays the price of a product.
 
 ![Price component](docs/components/price.png)
 
+### Sponsored
+
+The sponsored component displays the word 'sponsored' and is meant to be
+displayed when a product is promoted for advertising reasons.
+
+![Sponsored component](docs/components/sponsored.png)
+
 ## Roadmap
 
 See the [open
