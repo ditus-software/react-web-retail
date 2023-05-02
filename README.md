@@ -55,6 +55,12 @@ an attribute of the product, such as the product's color or dimensions.
 
 ![Product Attribute component](docs/components/product-attribute.png)
 
+### Product Attributes
+
+The Product Attributes component displays a list of product attributes.
+
+![Product Attributes component](docs/components/product-attributes.png)
+
 ### Save Coupon
 
 The Save Coupon component displays a message indicating how much the consumer
