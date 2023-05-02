@@ -75,12 +75,19 @@ The Product Attributes component displays a list of product attributes.
 
 ![Product Attributes component](docs/components/product-attributes.png)
 
-### Rating Linear Progress Attributes
+### Rating Linear Progress
 
 The Rating Linear Progress component displays a styled Linear Progress bar that
 displays the rating for a product.
 
 ![Rating Linear Progress component](docs/components/rating-linear-progress.png)
+
+### Rating Summary Bar
+
+The Rating Summary Bar component displays the ratings for a single star (1
+through 5) on the Rating Summary component.
+
+![Rating Summary Bar component](docs/components/rating-summary-bar.png)
 
 ### Save Coupon
 
