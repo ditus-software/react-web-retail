@@ -1,6 +1,6 @@
 {
   "name": "@ditus/react-web-retail",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A set of reusable React web components based on Material UI for retail applications.",
   "private": false,
   "main": "dist/index.js",

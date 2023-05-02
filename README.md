@@ -33,6 +33,12 @@ parts and could be harmful to younger children.
 
 ![Choking Hazard component](docs/components/choking-hazard.png)
 
+### Low Stock
+
+The Low Stock component displays a message when a product is low on quantity.
+
+![Low Stock component](docs/components/low-stock.png)
+
 ### Price
 
 The Price component displays the price of a product.
