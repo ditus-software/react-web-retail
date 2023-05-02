@@ -7,7 +7,7 @@
 
 This repo contains UI components based on Material UI for use in web-based
 retail applications. The repo is open source and will remain so. All components
-have multi-language/translation support.
+have multi-language/translation support and can be themed.
 
 ## Installation
 
@@ -28,6 +28,13 @@ npm run storybook
 
 The following components are included in the package. For demo's and to view
 components in actual size, run storybook as indicated above.
+
+### Cart Empty
+
+The Cart Empty component displays a message stating that the customers shopping
+cart is empty.
+
+![Choking Hazard component](docs/components/cart-empty.png)
 
 ### Choking Hazard
 

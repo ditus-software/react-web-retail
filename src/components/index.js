@@ -1,4 +1,5 @@
 /* eslint-disable import/prefer-default-export */
+export { default as CartEmpty } from './cart-empty/cart-empty';
 export { default as ChokingHazard } from './choking-hazard/choking-hazard';
 export { default as FeaturedProductAttributes } from './featured-product-attributes/featured-product-attributes';
 export { default as LowStock } from './low-stock/low-stock';
