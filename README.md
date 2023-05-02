@@ -36,6 +36,13 @@ parts and could be harmful to younger children.
 
 ![Choking Hazard component](docs/components/choking-hazard.png)
 
+### Featured Product Attributes
+
+The Featured Product Attributes component displays a subset of product
+attributes that consumers would be more interested in.
+
+![Product Attributes component](docs/components/featured-product-attributes.png)
+
 ### Low Stock
 
 The Low Stock component displays a message when a product is low on quantity.
