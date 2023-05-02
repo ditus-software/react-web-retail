@@ -48,6 +48,13 @@ The Price component displays the price of a product.
 
 ![Price component](docs/components/price.png)
 
+### Product Attribute
+
+The Product Attribute component displays a single name/value pair representing
+an attribute of the product, such as the product's color or dimensions.
+
+![Product Attribute component](docs/components/product-attribute.png)
+
 ### Save Coupon
 
 The Save Coupon component displays a message indicating how much the consumer
