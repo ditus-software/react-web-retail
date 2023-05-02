@@ -75,6 +75,13 @@ The Product Attributes component displays a list of product attributes.
 
 ![Product Attributes component](docs/components/product-attributes.png)
 
+### Rating Linear Progress Attributes
+
+The Rating Linear Progress component displays a styled Linear Progress bar that
+displays the rating for a product.
+
+![Rating Linear Progress component](docs/components/rating-linear-progress.png)
+
 ### Save Coupon
 
 The Save Coupon component displays a message indicating how much the consumer
