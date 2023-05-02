@@ -26,6 +26,9 @@ npm run storybook
 
 ## Components
 
+The following components are included in the package. For demo's and to view
+components in actual size, run storybook as indicated above.
+
 ### Choking Hazard
 
 The Choking Hazard component displays a warning on products that contain small
@@ -44,6 +47,13 @@ The Low Stock component displays a message when a product is low on quantity.
 The Price component displays the price of a product.
 
 ![Price component](docs/components/price.png)
+
+### Save Coupon
+
+The Save Coupon component displays a message indicating how much the consumer
+will save with a coupon that is automatically applied at checkout.
+
+![Save Coupon component](docs/components/save-coupon.png)
 
 ### Sponsored
 
