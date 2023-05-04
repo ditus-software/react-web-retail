@@ -113,6 +113,19 @@ displayed when a product is promoted for advertising reasons.
 
 ![Sponsored component](docs/components/sponsored.png)
 
+### Swatch
+
+The Swatch component displays a variant color or material for a product using a
+solid color or image.
+
+This is an example of a solid color:
+
+![Swatch component with solid color](docs/components/swatch1.png)
+
+This is an example of an image:
+
+![Swatch component with image](docs/components/swatch2.png)
+
 ## Roadmap
 
 See the [open
