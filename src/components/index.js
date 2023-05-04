@@ -7,6 +7,7 @@ export { default as Price } from './price/price';
 export { default as ProductAttribute } from './product-attribute/product-attribute';
 export { default as ProductAttributes } from './product-attributes/product-attributes';
 export { default as RatingLinearProgress } from './rating-linear-progress/rating-linear-progress';
+export { default as RatingSummary } from './rating-summary/rating-summary';
 export { default as RatingSummaryBar } from './rating-summary-bar/rating-summary-bar';
 export { default as SaveCoupon } from './save-coupon/save-coupon';
 export { default as Sponsored } from './sponsored/sponsored';

@@ -27,7 +27,10 @@ npm run storybook
 ## Components
 
 The following components are included in the package. For demo's and to view
-components in actual size, run storybook as indicated above.
+components in actual size, run storybook as indicated above. Some components are
+internal and are not listed here since they are not exposed. If you don't see a
+component that you believe should be here or you would like to see an internal
+component made external, submit a request and we will respond promptly.
 
 ### Cart Empty
 
@@ -81,6 +84,13 @@ The Rating Linear Progress component displays a styled Linear Progress bar that
 displays the rating for a product.
 
 ![Rating Linear Progress component](docs/components/rating-linear-progress.png)
+
+### Rating Summary
+
+The Rating Summary component displays the ratings for a product broken down by
+star rating, including the average rating and total number of ratings.
+
+![Rating Summary component](docs/components/rating-summary.png)
 
 ### Rating Summary Bar
 
