@@ -26,7 +26,7 @@ describe('Swatch', () => {
 
     const handleSelect = jest.fn();
 
-    const { container } = render(
+    const { container, rerender } = render(
       <Swatch colorText="Whatever" color="#ff0000" onSelect={handleSelect} />,
     );
 
@@ -34,5 +34,13 @@ describe('Swatch', () => {
 
     await user.click(screen.getByRole('button', { name: 'Whatever' }));
     expect(handleSelect).toBeCalledWith({ color: '#ff0000' });
+
+    // The component should not produce an error if the swatch is clicked and no
+    // onSelect callback is provided.
+    rerender(
+      <Swatch colorText="Whatever" color="#ff0000" />,
+    );
+
+    await user.click(screen.getByRole('button', { name: 'Whatever' }));
   });
 });
