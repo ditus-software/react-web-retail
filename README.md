@@ -53,6 +53,14 @@ attributes that consumers would be more interested in.
 
 ![Featured Product Attributes component](docs/components/featured-product-attributes.png)
 
+### Featured Taxonomies
+
+The Featured Taxonomies component displays related taxonomies used to categories
+products. Customers would usually click a taxonomy to view all products within
+that category.
+
+![Featured Taxonomies component](docs/components/featured-taxonomies.png)
+
 ### Featured Taxonomy
 
 The Featured Taxonomy component displays a single category or taxonomy of

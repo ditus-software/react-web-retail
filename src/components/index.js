@@ -2,6 +2,7 @@
 export { default as CartEmpty } from './cart-empty/cart-empty';
 export { default as ChokingHazard } from './choking-hazard/choking-hazard';
 export { default as FeaturedProductAttributes } from './featured-product-attributes/featured-product-attributes';
+export { default as FeaturedTaxonomies } from './featured-taxonomies/featured-taxonomies';
 export { default as FeaturedTaxonomy } from './featured-taxonomy/featured-taxonomy';
 export { default as LowStock } from './low-stock/low-stock';
 export { default as Price } from './price/price';
