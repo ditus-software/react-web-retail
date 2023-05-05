@@ -126,6 +126,12 @@ This is an example of an image:
 
 ![Swatch component with image](docs/components/swatch2.png)
 
+### Swatches
+
+The Swatches component displays one or more swatches.
+
+![Swatches component](docs/components/swatches.png)
+
 ## Roadmap
 
 See the [open

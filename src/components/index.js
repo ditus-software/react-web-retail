@@ -12,3 +12,4 @@ export { default as RatingSummaryBar } from './rating-summary-bar/rating-summary
 export { default as SaveCoupon } from './save-coupon/save-coupon';
 export { default as Sponsored } from './sponsored/sponsored';
 export { default as Swatch } from './swatch/swatch';
+export { default as Swatches } from './swatches/swatches';
