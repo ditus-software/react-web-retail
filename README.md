@@ -51,7 +51,18 @@ parts and could be harmful to younger children.
 The Featured Product Attributes component displays a subset of product
 attributes that consumers would be more interested in.
 
-![Product Attributes component](docs/components/featured-product-attributes.png)
+![Featured Product Attributes component](docs/components/featured-product-attributes.png)
+
+### Featured Taxonomy
+
+The Featured Taxonomy component displays a single category or taxonomy of
+products, such as dog toys or cat food.
+
+![Featured Taxonomy component](docs/components/featured-taxonomy1.png)
+
+When the mouse is hovered over the component, it appears as:
+
+![Featured Taxonomy component with mouse hovered](docs/components/featured-taxonomy2.png)
 
 ### Low Stock
 
