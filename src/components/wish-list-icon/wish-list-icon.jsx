@@ -5,15 +5,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Badge, IconButton } from '@mui/material';
-import CartOutline from 'react-ionicons/lib/CartOutline';
+import HeartOutline from 'react-ionicons/lib/HeartOutline';
 import { useTranslationProps } from '@ditus/react-translation';
 
 /**
- * Represents the icon used to display the shopping cart.
+ * Represents the icon used to display the wish list.
  * @param {*} props The properties of the component.
  * @returns {HTMLElement} An HTML element representing the component.
  */
-function CartIcon(props) {
+function WishListIcon(props) {
   const {
     hidden,
     count,
@@ -45,7 +45,7 @@ function CartIcon(props) {
         color="primary"
         showZero={false}
       >
-        <CartOutline
+        <HeartOutline
           height="30px"
           width="30px"
         />
@@ -54,11 +54,11 @@ function CartIcon(props) {
   );
 }
 
-export default CartIcon;
+export default WishListIcon;
 
-CartIcon.propTypes = {
+WishListIcon.propTypes = {
   /**
-   * Specifies the number of items in the cart.
+   * Specifies the number of items in the wish list.
    */
   count: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 
@@ -78,9 +78,9 @@ CartIcon.propTypes = {
   onClick: PropTypes.func,
 };
 
-CartIcon.defaultProps = {
+WishListIcon.defaultProps = {
   count: 0,
   hidden: false,
-  label: 'Shopping Cart',
+  label: 'Wish List',
   onClick: null,
 };

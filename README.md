@@ -163,6 +163,18 @@ The Swatches component displays one or more swatches.
 
 ![Swatches component](docs/components/swatches.png)
 
+### Wish List Icon
+
+The Wish List Icon component displays a wish list icon that can be clicked to
+redirect the customer to their wish list.
+
+![Wish List Icon component](docs/components/wish-list-icon1.png)
+
+The Wish List Icon with a badge specifying the number of products in the wish
+list:
+
+![Wish List Icon component with badge](docs/components/wish-list-icon2.png)
+
 ## Roadmap
 
 See the [open
