@@ -39,6 +39,18 @@ cart is empty.
 
 ![Choking Hazard component](docs/components/cart-empty.png)
 
+### Cart Icon
+
+The Cart Icon component displays a shopping cart icon that can be clicked to
+redirect the customer to their shopping cart.
+
+![Cart Icon component](docs/components/cart-icon1.png)
+
+The Cart Icon with a badge specifying the number of products in the shopping
+cart:
+
+![Cart Icon component with badge](docs/components/cart-icon2.png)
+
 ### Choking Hazard
 
 The Choking Hazard component displays a warning on products that contain small
