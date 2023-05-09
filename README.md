@@ -127,6 +127,12 @@ The Product Attributes component displays a list of product attributes.
 
 ![Product Attributes component](docs/components/product-attributes.png)
 
+### Product Image
+
+The Product Image component displays a single image of a product.
+
+![Product Image component](docs/components/product-image.png)
+
 ### Rating Linear Progress
 
 The Rating Linear Progress component displays a styled Linear Progress bar that
