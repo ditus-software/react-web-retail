@@ -1,4 +1,5 @@
 /* eslint-disable import/prefer-default-export */
+export { default as BrandLink } from './brand-link/brand-link';
 export { default as CartEmpty } from './cart-empty/cart-empty';
 export { default as CartIcon } from './cart-icon/cart-icon';
 export { default as ChokingHazard } from './choking-hazard/choking-hazard';

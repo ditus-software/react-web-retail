@@ -32,6 +32,17 @@ internal and are not listed here since they are not exposed. If you don't see a
 component that you believe should be here or you would like to see an internal
 component made external, submit a request and we will respond promptly.
 
+### Brand Link
+
+Displays the brand name of a product.
+
+![Brand Link component](docs/components/brand-link1.png)
+
+It can also be displayed as a link, if there are many products of the same
+brand:
+
+![Brand Link component as a link](docs/components/brand-link2.png)
+
 ### Cart Empty
 
 The Cart Empty component displays a message stating that the customers shopping
