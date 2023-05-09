@@ -32,9 +32,16 @@ internal and are not listed here since they are not exposed. If you don't see a
 component that you believe should be here or you would like to see an internal
 component made external, submit a request and we will respond promptly.
 
+### Add To Cart
+
+The Add to Cart component displays a button that allows customers to add a
+product to their shopping cart.
+
+![Add to Cart component](docs/components/add-to-cart.png)
+
 ### Brand Link
 
-Displays the brand name of a product.
+The Brand Link component displays the brand name of a product.
 
 ![Brand Link component](docs/components/brand-link1.png)
 
