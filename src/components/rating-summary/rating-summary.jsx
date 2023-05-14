@@ -22,6 +22,7 @@ function RatingSummary(props) {
   const {
     averageRating,
     averageRatingMessage,
+    onTotalRatingClick,
     ratings,
     totalRatings,
     totalRatingsMessage,
@@ -51,6 +52,7 @@ function RatingSummary(props) {
       <Grid item xs={12}>
         <RatingSummaryTotal
           message={totalRatingsMessage}
+          onClick={onTotalRatingClick}
           totalRatings={totalRatings}
         />
       </Grid>
@@ -76,6 +78,12 @@ RatingSummary.propTypes = {
   averageRatingMessage: PropTypes.string,
 
   /**
+   * Specifies the callback function to invoke when the total ratings link is
+   * clicked.
+   */
+  onTotalRatingClick: PropTypes.func,
+
+  /**
    * Specifies the ratings to display. The array must be exactly 5 items in
    * length. Index 0 is the first star, index 1 is the second star, and so on.
    * The total of all indexes should equal 100 percent.
@@ -99,6 +107,7 @@ RatingSummary.propTypes = {
 RatingSummary.defaultProps = {
   averageRating: null,
   averageRatingMessage: undefined,
+  onTotalRatingClick: null,
   ratings: null,
   totalRatings: null,
   totalRatingsMessage: undefined,

@@ -8,6 +8,7 @@
 //
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import RatingSummaryTotal from './rating-summary-total';
 
 describe('RatingSummaryTotal', () => {
@@ -67,5 +68,39 @@ describe('RatingSummaryTotal', () => {
 
     expect(container).not.toBeEmptyDOMElement();
     expect(container.textContent).toBe('1,234,567 ratings');
+  });
+
+  it('displays as a link when clickable.', async () => {
+    const { container } = render(
+      <RatingSummaryTotal totalRatings={3} onClick={() => {}} />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+    expect(screen.queryByRole('link', '3 ratings')).not.toBeNull();
+  });
+
+  it('does not display as a link when not clickable.', async () => {
+    const { container } = render(
+      <RatingSummaryTotal totalRatings={3} />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+    expect(screen.queryByRole('link', '3 ratings')).toBeNull();
+    expect(container.textContent).toBe('3 ratings');
+  });
+
+  it('can be clicked (when clickable).', async () => {
+    const user = userEvent.setup();
+
+    const handleClick = jest.fn();
+
+    const { container } = render(
+      <RatingSummaryTotal totalRatings={3} onClick={handleClick} />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+
+    await user.click(screen.getByRole('link'));
+    expect(handleClick).toBeCalled();
   });
 });

@@ -133,6 +133,14 @@ The Product Image component displays a single image of a product.
 
 ![Product Image component](docs/components/product-image.png)
 
+### Rating Bar
+
+The Rating Bar component displays a product star rating and when the user
+presses or hovers over the component, a popup appears displaying more
+information on the ratings of the product.
+
+![Rating Bar component](docs/components/rating-bar.png)
+
 ### Rating Linear Progress
 
 The Rating Linear Progress component displays a styled Linear Progress bar that

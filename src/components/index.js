@@ -12,6 +12,7 @@ export { default as Price } from './price/price';
 export { default as ProductAttribute } from './product-attribute/product-attribute';
 export { default as ProductAttributes } from './product-attributes/product-attributes';
 export { default as ProductImage } from './product-image/product-image';
+export { default as RatingBar } from './rating-bar/rating-bar';
 export { default as RatingLinearProgress } from './rating-linear-progress/rating-linear-progress';
 export { default as RatingSummary } from './rating-summary/rating-summary';
 export { default as RatingSummaryBar } from './rating-summary-bar/rating-summary-bar';

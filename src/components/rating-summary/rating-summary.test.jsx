@@ -137,7 +137,7 @@ describe('RatingSummary', () => {
     expect(container).not.toBeEmptyDOMElement();
 
     expect(RatingSummaryTotal).toHaveBeenCalledWith(
-      { message: 'howdy', totalRatings: 4 },
+      { message: 'howdy', totalRatings: 4, onClick: null },
       {},
     );
   });
@@ -152,7 +152,29 @@ describe('RatingSummary', () => {
     expect(container).not.toBeEmptyDOMElement();
 
     expect(RatingSummaryTotal).toHaveBeenCalledWith(
-      { message: undefined, totalRatings: null },
+      { message: undefined, totalRatings: null, onClick: null },
+      {},
+    );
+  });
+
+  it('allows clicking the total ratings (when clickable).', async () => {
+    const handleClick = jest.fn();
+
+    const { container } = render(
+      <RatingSummary
+        ratings={[1, 2, 3, 4, 5]}
+        onTotalRatingClick={handleClick}
+      />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+
+    expect(RatingSummaryTotal).toBeCalledWith(
+      expect.objectContaining(
+        {
+          onClick: handleClick,
+        },
+      ),
       {},
     );
   });

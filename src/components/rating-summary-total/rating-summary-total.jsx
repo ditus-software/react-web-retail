@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 //
 // Copyright (c) DITUS INC. All rights reserved. See LICENSE file in the project
 // root for details.
@@ -6,6 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import numeral from 'numeral';
 import {
+  Link,
   Typography,
 } from '@mui/material';
 import { useTranslationProps } from '@ditus/react-translation';
@@ -20,12 +22,15 @@ import { useTranslationProps } from '@ditus/react-translation';
 function RatingSummaryTotal(props) {
   const {
     message,
+    onClick,
     totalRatings,
   } = useTranslationProps({ name: 'RatingSummaryTotal', props });
 
   if (!totalRatings) {
     return null;
   }
+
+  const displayMessage = message.replace('{total}', numeral(totalRatings).format('0,0'));
 
   return (
     <Typography
@@ -35,7 +40,18 @@ function RatingSummaryTotal(props) {
         mt: 2,
       }}
     >
-      {message.replace('{total}', numeral(totalRatings).format('0,0'))}
+      { onClick
+        ? (
+          <Link
+            role="link"
+            onClick={onClick}
+            sx={{ cursor: 'pointer' }}
+          >
+            {displayMessage}
+          </Link>
+        )
+        : null }
+      { !onClick ? displayMessage : null}
     </Typography>
   );
 }
@@ -50,6 +66,11 @@ RatingSummaryTotal.propTypes = {
   message: PropTypes.string,
 
   /**
+   * Specifies the callback function to invoke when the total is clicked.
+   */
+  onClick: PropTypes.func,
+
+  /**
    * Specifies the total number of ratings. This is not a percent, but rather a
    * count of how many ratings were given.
    */
@@ -61,5 +82,6 @@ RatingSummaryTotal.propTypes = {
 
 RatingSummaryTotal.defaultProps = {
   message: '{total} ratings',
+  onClick: null,
   totalRatings: null,
 };
