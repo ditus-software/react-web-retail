@@ -23,8 +23,10 @@ function ProductImage(props) {
     <Box
       component="img"
       sx={{
-        display: 'block',
         width: '100%',
+        height: '100%',
+        objectFit: 'contain',
+        overflow: 'hidden',
       }}
       src={url}
       alt={name}
