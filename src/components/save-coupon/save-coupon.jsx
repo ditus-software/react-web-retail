@@ -5,7 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import numeral from 'numeral';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useTranslationProps } from '@ditus/react-translation';
 
 /**
@@ -27,16 +27,21 @@ function SaveCoupon(props) {
   }
 
   return (
-    <div>
+    <Box
+      sx={{
+        mb: 0.5,
+        mt: 0.5,
+      }}
+    >
       <Typography
         variant="body2"
         sx={{
           backgroundColor: 'primary.main',
           color: 'primary.contrastText',
-          pt: 1,
-          pb: 1,
-          pr: 2,
-          pl: 2,
+          pt: 0.5,
+          pb: 0.5,
+          pr: 0.5,
+          pl: 0.5,
         }}
         display="inline"
       >
@@ -51,7 +56,7 @@ function SaveCoupon(props) {
       >
         {withCoupon}
       </Typography>
-    </div>
+    </Box>
   );
 }
 
