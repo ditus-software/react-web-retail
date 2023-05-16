@@ -5,6 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
+import { useTranslationProps } from '@ditus/react-translation';
 
 /**
  * Represents a component that displays the primary picture of a product.
@@ -13,11 +14,14 @@ import { Box } from '@mui/material';
  */
 function ProductImage(props) {
   const {
+    label,
     name,
     url,
-  } = props;
+  } = useTranslationProps({ name: 'ProductImage', props });
 
   const handleDragStart = (e) => e.preventDefault();
+
+  const newLabel = label.replace('{name}', name);
 
   return (
     <Box
@@ -29,7 +33,7 @@ function ProductImage(props) {
         overflow: 'hidden',
       }}
       src={url}
-      alt={name}
+      alt={newLabel}
       onDragStart={handleDragStart}
     />
   );
@@ -38,6 +42,12 @@ function ProductImage(props) {
 export default ProductImage;
 
 ProductImage.propTypes = {
+  /**
+   * Specifies the accessibility label replacing the {name} token with the name
+   * of the product.
+   */
+  label: PropTypes.string,
+
   /**
    * Specifies the name of the product.
    */
@@ -50,4 +60,5 @@ ProductImage.propTypes = {
 };
 
 ProductImage.defaultProps = {
+  label: 'Image of {name}',
 };

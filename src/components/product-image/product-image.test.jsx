@@ -11,7 +11,7 @@ import { render, screen } from '@testing-library/react';
 import ProductImage from './product-image';
 
 describe('ProductImage', () => {
-  it('sets the alternative text of the image to the name of the product.', async () => {
+  it('sets the alternative text of the image to the default label.', async () => {
     const { container } = render(
       <ProductImage
         name="Cat Food"
@@ -20,7 +20,20 @@ describe('ProductImage', () => {
     );
 
     expect(container).not.toBeEmptyDOMElement();
-    expect(screen.queryByRole('img', { name: 'Cat Food' })).not.toBeNull();
+    expect(screen.queryByRole('img', { name: 'Image of Cat Food' })).not.toBeNull();
+  });
+
+  it('sets the alternative text of the image to the specified label replacing the name token.', async () => {
+    const { container } = render(
+      <ProductImage
+        name="Cat Food"
+        url="https://whatever/whatever.jpg"
+        label="This is {name}"
+      />,
+    );
+
+    expect(container).not.toBeEmptyDOMElement();
+    expect(screen.queryByRole('img', { name: 'This is Cat Food' })).not.toBeNull();
   });
 
   it('displays the image.', async () => {
