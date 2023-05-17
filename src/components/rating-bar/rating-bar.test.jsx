@@ -10,6 +10,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import RatingBar from './rating-bar';
+import RatingSummary from '../rating-summary/rating-summary';
+
+// eslint-disable-next-line react/jsx-props-no-spreading
+jest.mock('../rating-summary/rating-summary', () => jest.fn(() => (<div />)));
 
 describe('RatingBar', () => {
   it('does not display when no ratings are specified.', async () => {
@@ -124,5 +128,35 @@ describe('RatingBar', () => {
     await user.unhover(rating);
 
     expect(screen.queryByRole('presentation')).not.toBeInTheDocument();
+  });
+
+  it('displays a summary popover when the mouse hovers over the star rating.', async () => {
+    const user = userEvent.setup();
+    const fn = jest.fn();
+
+    render(
+      <RatingBar
+        ratings={[1, 2, 3, 4, 5]}
+        averageRating={5}
+        totalRatings={10}
+        onTotalRatingClick={fn}
+      />,
+    );
+
+    const rating = screen.queryByLabelText('Rating');
+    await user.hover(rating);
+
+    expect(RatingSummary).toHaveBeenCalledWith({
+      averageRating: 5,
+      totalRatings: 10,
+      ratings: [
+        1,
+        2,
+        3,
+        4,
+        5,
+      ],
+      onTotalRatingClick: fn,
+    }, {});
   });
 });
