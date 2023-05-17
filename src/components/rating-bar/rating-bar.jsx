@@ -22,6 +22,7 @@ import RatingSummary from '../rating-summary/rating-summary';
  */
 function RatingBar(props) {
   const {
+    label,
     ratings,
     averageRating,
     totalRatings,
@@ -50,6 +51,7 @@ function RatingBar(props) {
       <Typography
         aria-describedby={id}
         aria-owns={id}
+        aria-label={label}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
@@ -60,7 +62,7 @@ function RatingBar(props) {
         ref={popoverAnchor}
       >
         <Rating
-          defaultValue={averageRating}
+          value={averageRating}
           size="small"
           precision={0.5}
           readOnly
@@ -115,6 +117,11 @@ RatingBar.propTypes = {
   ]),
 
   /**
+   * Specifies the accessible label.
+   */
+  label: PropTypes.string,
+
+  /**
    * Specifies the ratings to display. The array must be exactly 5 items in
    * length. Index 0 is the first star, index 1 is the second star, and so on.
    * The total of all indexes should equal 100 percent.
@@ -137,6 +144,7 @@ RatingBar.propTypes = {
 
 RatingBar.defaultProps = {
   averageRating: null,
+  label: 'Rating',
   ratings: null,
   totalRatings: null,
   onTotalRatingClick: null,
