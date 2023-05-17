@@ -9,6 +9,7 @@ export { default as FeaturedTaxonomies } from './featured-taxonomies/featured-ta
 export { default as FeaturedTaxonomy } from './featured-taxonomy/featured-taxonomy';
 export { default as LowStock } from './low-stock/low-stock';
 export { default as Price } from './price/price';
+export { default as Product } from './product/product';
 export { default as ProductAttribute } from './product-attribute/product-attribute';
 export { default as ProductAttributes } from './product-attributes/product-attributes';
 export { default as ProductImage } from './product-image/product-image';

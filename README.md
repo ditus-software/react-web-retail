@@ -6,8 +6,10 @@
 [![contributor covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE-OF-CONDUCT.md)
 
 This repo contains UI components based on Material UI for use in web-based
-retail applications. The repo is open source and will remain so. All components
-have multi-language/translation support and can be themed.
+retail applications. These components can be used when building a responsive,
+themed, and accessible web-based retail application. All components have
+multi-language/translation support and can be themed. The repo is open source
+and will remain so.
 
 ## Installation
 
@@ -113,6 +115,13 @@ The Low Stock component displays a message when a product is low on quantity.
 The Price component displays the price of a product.
 
 ![Price component](docs/components/price.png)
+
+### Product
+
+The Product component displays a product's information and is used in search
+results and lists of products.
+
+![Product component](docs/components/product.png)
 
 ### Product Attribute
 
